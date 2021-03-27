@@ -1,0 +1,61 @@
+---
+title: "plots.rmd"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+#assignment..R-weekned
+
+#Data vizualization
+#when the mpg is run popular car models are displayed ,showing the manufacturer,the car model,displ,year ,number of cyl,highway miles per gallon,the fuel type and the class which is the cartype.
+
+
+ggplot2::mpg
+
+nrow(mpg)
+#there are a total of 234 rows 
+
+
+ncol(mpg)
+
+#and 11 columns.
+
+?mpg
+#getting description about the dataset.
+#by running mpg the drv is a categorical variable that describes the type  of drive train, where f = front-wheel drive, r = rear wheel drive, 4 = four wheel drive 
+
+
+
+install.packages("ggplot2")
+library(ggplot2)
+
+#Make a scatter plot of hwy vs. cyl
+ggplot(data=mpg)+
+   geom_point(mapping = aes(x =cyl , y = hwy))
+
+
+   
+
