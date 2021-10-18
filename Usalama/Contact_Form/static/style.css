@@ -1,0 +1,67 @@
+
+
+*
+{
+	font-family: 'poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #161623;
+
+	}
+
+.container{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	flex-wrap: wrap;
+	z-index: 1;
+}
+
+.fontuser {
+     position: relative;
+}
+
+.fontuser i{
+    position: absolute;
+    left: 15px;
+    top: 20px;
+     color: gray;
+ }
+ input[type=text],
+        input[type=number],
+          input[type=url],
+          input[type=email]{
+            width: 100%;
+            padding: 12px 40px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius:7px;
+
+        }
+
+ input[type=text],
+        input[type=number],
+          input[type=url],
+          input[type=email]:hover {
+border: 1px solid #0000FF;
+}
+
+ .btn{
+ float: left;
+ }
+
+.fontuser i:hover{
+ color: blue;
+}
